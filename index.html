@@ -1,0 +1,193 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Glow & Grace Beauty Salon</title>
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Navigation -->
+    <header>
+      <nav>
+        <h2>Glow & Grace</h2>
+
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#gallery">Gallery</a></li>
+          <li><a href="#appointment">Appointment</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home -->
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Glow & Grace Beauty Salon</h1>
+
+        <p>Look Beautiful. Feel Confident.</p>
+
+        <a href="#appointment" class="btn"> Book Appointment </a>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section class="about">
+      <h2>Welcome to Glow & Grace</h2>
+
+      <p>
+        We provide professional beauty and salon services using high-quality
+        products and experienced stylists.
+      </p>
+    </section>
+
+    <!-- Services -->
+    <section id="services">
+      <h2>Our Services</h2>
+
+      <div class="service-container">
+        <div class="service-card">
+          <h3>💇 Hair Styling</h3>
+          <p>Haircut, styling and hair treatments.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>💆 Facial</h3>
+          <p>Relaxing facials for healthy glowing skin.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>💅 Manicure & Pedicure</h3>
+          <p>Beautiful and relaxing nail care services.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>👰 Bridal Makeup</h3>
+          <p>Professional bridal makeup for your special day.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>✨ Makeup</h3>
+          <p>Party and event makeup services.</p>
+        </div>
+
+        <div class="service-card">
+          <h3>🧖 Spa</h3>
+          <p>Relaxing spa and wellness treatments.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pricing -->
+    <section id="pricing">
+      <h2>Our Pricing</h2>
+
+      <div class="pricing-container">
+        <div class="price-card">
+          <h3>Haircut</h3>
+          <h2>₹500</h2>
+          <p>Professional haircut and styling.</p>
+          <button onclick="bookService('Haircut')">Book Now</button>
+        </div>
+
+        <div class="price-card">
+          <h3>Facial</h3>
+          <h2>₹800</h2>
+          <p>Relaxing facial treatment.</p>
+          <button onclick="bookService('Facial')">Book Now</button>
+        </div>
+
+        <div class="price-card">
+          <h3>Bridal Makeup</h3>
+          <h2>₹5000</h2>
+          <p>Complete bridal makeup package.</p>
+          <button onclick="bookService('Bridal Makeup')">Book Now</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Gallery -->
+    <section id="gallery">
+      <h2>Our Gallery</h2>
+
+      <div class="gallery">
+        <img
+          src="https://images.unsplash.com/photo-1560066984-138dadb4c035"
+          alt="Beauty Salon"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1522337360788-8b13dee7a37e"
+          alt="Salon"
+        />
+
+        <img
+          src="https://images.unsplash.com/photo-1562322140-8baeececf3df"
+          alt="Hair Styling"
+        />
+      </div>
+    </section>
+
+    <!-- Appointment -->
+    <section id="appointment">
+      <h2>Book Your Appointment</h2>
+
+      <form onsubmit="bookAppointment(event)">
+        <input type="text" id="name" placeholder="Enter your name" required />
+
+        <input
+          type="tel"
+          id="phone"
+          placeholder="Enter phone number"
+          required
+        />
+
+        <select id="service" required>
+          <option value="">Select Service</option>
+
+          <option value="Haircut">Haircut</option>
+
+          <option value="Facial">Facial</option>
+
+          <option value="Manicure">Manicure & Pedicure</option>
+
+          <option value="Bridal Makeup">Bridal Makeup</option>
+
+          <option value="Makeup">Makeup</option>
+
+          <option value="Spa">Spa</option>
+        </select>
+
+        <input type="date" id="date" required />
+
+        <input type="time" id="time" required />
+
+        <button type="submit">Book Appointment</button>
+      </form>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Us</h2>
+
+      <p>📞 Phone: 9876543210</p>
+
+      <p>📧 Email: glowgrace@gmail.com</p>
+
+      <p>📍 Location: Hyderabad, Telangana</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>© 2026 Glow & Grace Beauty Salon. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
